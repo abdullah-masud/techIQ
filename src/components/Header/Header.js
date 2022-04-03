@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.css'
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import CustomLink from '../CustomLink/CustomLink';
 
@@ -8,10 +9,10 @@ const Header = () => {
             <Container>
                 <Nav className="mx-auto d-flex align-items-center">
                     <CustomLink to="/home">HOME</CustomLink>
-                    <CustomLink className="ms-5" to="/reviews">REVIEWS</CustomLink>
-                    <CustomLink className="ms-5" to="/dashboard">DASHBOARD</CustomLink>
-                    <CustomLink className="ms-5" to="/blogs">BLOGS</CustomLink>
-                    <CustomLink className="ms-5" to="/about">ABOUT</CustomLink>
+                    <CustomLink className="ms-5 nav-link" to="/reviews">REVIEWS</CustomLink>
+                    <CustomLink className="ms-5 nav-link" to="/dashboard">DASHBOARD</CustomLink>
+                    <CustomLink className="ms-5 nav-link" to="/blogs">BLOGS</CustomLink>
+                    <CustomLink className="ms-5 nav-link" to="/about">ABOUT</CustomLink>
                 </Nav>
             </Container>
         </Navbar>
