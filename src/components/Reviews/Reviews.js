@@ -1,15 +1,10 @@
-import React, { useEffect, useState } from 'react';
 import './Reviews.css'
 import Review from '../Review/Review';
+import useReviews from '../../hooks/useReviews';
 
 const Reviews = () => {
-    const [reviews, setReviews] = useState([]);
+    const [reviews, setReviews] = useReviews();
 
-    useEffect(() => {
-        fetch('reviews.json')
-            .then(res => res.json())
-            .then(data => setReviews(data))
-    }, [])
     return (
         <div>
             <h2 className='my-4'>Reviews</h2>
