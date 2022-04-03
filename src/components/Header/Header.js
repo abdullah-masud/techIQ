@@ -1,16 +1,17 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import CustomLink from '../CustomLink/CustomLink';
 
 const Header = () => {
     return (
-        <Navbar bg="light" variant="light">
+        <Navbar className='mt-2' bg="white" variant="light">
             <Container>
-                <Nav className="mx-auto">
-                    <Nav.Link className='text-black' href="#home">HOME</Nav.Link>
-                    <Nav.Link className='text-black ms-5' href="#reviews">REVIEWS</Nav.Link>
-                    <Nav.Link className='text-black ms-5' href="#dashboard">DASHBOARD</Nav.Link>
-                    <Nav.Link className='text-black ms-5' href="#blogs">BLOGS</Nav.Link>
-                    <Nav.Link className='text-black ms-5' href="#about">ABOUT</Nav.Link>
+                <Nav className="mx-auto d-flex align-items-center">
+                    <CustomLink to="/home">HOME</CustomLink>
+                    <CustomLink className="ms-5" to="/reviews">REVIEWS</CustomLink>
+                    <CustomLink className="ms-5" to="/dashboard">DASHBOARD</CustomLink>
+                    <CustomLink className="ms-5" to="/blogs">BLOGS</CustomLink>
+                    <CustomLink className="ms-5" to="/about">ABOUT</CustomLink>
                 </Nav>
             </Container>
         </Navbar>
