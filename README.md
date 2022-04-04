@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Tech Analytics
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Website Link [Tech Analytics](https://github.com/facebook/create-react-app)
 
 ## Available Scripts
 

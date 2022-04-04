@@ -9,7 +9,7 @@ const Blogs = () => {
                 <Accordion.Item eventKey="0">
                     <Accordion.Header><h6>What is Context API ?</h6></Accordion.Header>
                     <Accordion.Body className='text-start'>
-                        Context API is used to share data globally for a tree for React components. This is a different approach to prop drilling. In prop drilling, we pass the data from one part the component to another by going through other component that do not need the data. But we don't have to do that in Context API. We may construct a context in the parent element and accept the data from whatever component we like.
+                        Context API is used to share data globally for a tree for React components. This is a different approach to prop drilling. In prop drilling, we pass the data from one part the component to another by going through other component that do not need the data. But we don't have to do that in Context API. We may construct a context in the parent element and accept the data from whatever component we like. This helps us avoid prop drilling and improves efficiency.
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">

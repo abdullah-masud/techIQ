@@ -12,7 +12,6 @@ const Header = () => {
                     <CustomLink className="ms-5 nav-link" to="/reviews">REVIEWS</CustomLink>
                     <CustomLink className="ms-5 nav-link" to="/dashboard">DASHBOARD</CustomLink>
                     <CustomLink className="ms-5 nav-link" to="/blogs">BLOGS</CustomLink>
-                    <CustomLink className="ms-5 nav-link" to="/about">ABOUT</CustomLink>
                 </Nav>
             </Container>
         </Navbar>

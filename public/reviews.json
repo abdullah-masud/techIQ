@@ -1,14 +1,14 @@
 [
     {
         "id": "1",
-        "name": "Tom Brant",
+        "name": "Benjamin",
         "review": "The M1-equipped MacBook Air now packs far better performance than its predecessors, rivaling at times the M1-based MacBook Pro. At $999, it's the best value among macOS laptops.",
         "img": "https://randomuser.me/api/portraits/men/62.jpg",
         "rating": "4.5/5"
     },
     {
         "id": "2",
-        "name": "Matthew Buzzi",
+        "name": "Patrick",
         "review": "If you're a macOS fan who primarily uses a laptop to write and browse the web, the 2020 Apple MacBook Air's redesigned keyboard and lower price make it easy to recommend.",
         "img": "https://randomuser.me/api/portraits/men/11.jpg",
         "rating": "4/5"
