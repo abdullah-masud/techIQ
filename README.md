@@ -4,10 +4,10 @@ Website Link [TechIQ](https://techiq.netlify.app/)
 
 ## Website Description
 
-- This website gives you the latest analytics about a product
+- This website provides you with the most up-to-date product statistics.
 
-- You will find all the users review on the product
+- You'll find all of the product's customer reviews here.
 
-- We have also shown the sells and investment in dashboard on our website
+- Our website has a dashboard where you can check the monthly sales and investments.
 
-- This website also has multiple FAQ in blogs page
+- This website also offers a number of FAQs on the blog page.
