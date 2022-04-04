@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, Bar, BarChart, Legend, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Dashboard = () => {
     const [data, setData] = useState([]);
@@ -14,19 +14,23 @@ const Dashboard = () => {
         <>
             <div className='dashboard-container d-flex justify-content-around mt-4'>
                 <div>
-                    <h4 className='mb-4' style={{ color: "#49459b" }}>Sell Vs Month</h4>
-                    <LineChart width={600} height={400} data={data}>
-                        <Line type="monotone" dataKey={"sell"} stroke="#8884d8" strokeWidth={2} />
-                        <XAxis dataKey={'month'}></XAxis>
-                        <YAxis></YAxis>
+                    <h5 className='mb-4' style={{ color: "#49459b" }}>Month wise Sell</h5>
+                    <AreaChart
+                        width={700}
+                        height={400}
+                        data={data}
+                    >
+                        <XAxis dataKey="month" />
+                        <YAxis />
                         <Tooltip />
                         <Legend />
-                    </LineChart>
+                        <Area type="monotone" dataKey="sell" stroke="#8884d8" fill="#8884d8" />
+                    </AreaChart>
+
                 </div>
                 <div>
-                    <h4 className='mb-4' style={{ color: "#49459b" }}>Investment & Revenue Vs Month</h4>
-                    <BarChart width={600} height={400} data={data}>
-                        <CartesianGrid strokeDasharray="3 3" />
+                    <h5 className='mb-4' style={{ color: "#49459b" }}>Investment vs Revenue</h5>
+                    <BarChart width={700} height={400} data={data}>
                         <XAxis dataKey="month" />
                         <YAxis />
                         <Tooltip />

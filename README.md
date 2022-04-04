@@ -4,10 +4,10 @@ Website Link [Tech Analytics](https://github.com/facebook/create-react-app)
 
 ## Website Description
 
-- first
+- This website gives you the latest analytics about a product
 
-- Second
+- You will find all the users review on the product
 
-- Third
+- We have also shown the sells and investment in dashboard on our website
 
-- Fourth
+- This website also has multiple FAQ in blogs page
