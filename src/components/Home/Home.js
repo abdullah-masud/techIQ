@@ -35,7 +35,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='mb-5'>
-                <Link className='text-decoration-none border p-2 text-white btn btn-primary rounded-3' to="/reviews">See All Reviews</Link>
+                <Link style={{ backgroundColor: "#087E8B" }} className='text-decoration-none border p-2 text-white btn btn-primary rounded-3' to="/reviews">See All Reviews</Link>
             </div>
         </Container >
     );

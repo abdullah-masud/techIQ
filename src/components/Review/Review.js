@@ -8,9 +8,9 @@ const Review = (props) => {
         <Card className='shadow p-3 mb-5 bg-body rounded border-0 ' style={{ width: '18rem' }}>
             <Card.Img variant="top" src={img} />
             <Card.Body>
-                <h2>{name}</h2>
-                <h6>{review}</h6>
-                <h5>Rating: {rating}</h5>
+                <h2 style={{ color: "#0c5348" }}>{name}</h2>
+                <p className='m-0 my-3'>{review}</p>
+                <h6><small>Rating: {rating}</small></h6>
             </Card.Body>
         </Card>
 
