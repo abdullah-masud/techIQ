@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Dashboard = () => {
     const [data, setData] = useState([]);
@@ -14,24 +14,26 @@ const Dashboard = () => {
         <>
             <div className='dashboard-container d-flex justify-content-around mt-4'>
                 <div>
-                    <h4 className='mb-4'>Investment vs Revenue chart</h4>
+                    <h4 className='mb-4'>Sell Vs Month</h4>
                     <LineChart width={600} height={400} data={data}>
-                        <Line type="monotone" dataKey={"investment"} stroke="#8884d8" />
-                        <Line type="monotone" dataKey={"revenue"} stroke="#FF5964" />
+                        <Line type="monotone" dataKey={"sell"} stroke="#8884d8" />
                         <XAxis dataKey={'month'}></XAxis>
                         <YAxis></YAxis>
                         <Tooltip />
+                        <Legend />
                     </LineChart>
                 </div>
                 <div>
-                    <h4 className='mb-4'>Investment vs Revenue chart</h4>
-                    <LineChart width={600} height={400} data={data}>
-                        <Line type="monotone" dataKey={"investment"} stroke="#8884d8" />
-                        <Line type="monotone" dataKey={"revenue"} stroke="#FF5964" />
-                        <XAxis dataKey={'month'}></XAxis>
-                        <YAxis></YAxis>
+                    <h4 className='mb-4'>Investment & Revenue VS Month</h4>
+                    <BarChart width={600} height={400} data={data}>
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="month" />
+                        <YAxis />
                         <Tooltip />
-                    </LineChart>
+                        <Legend />
+                        <Bar dataKey="investment" fill="#8884d8" />
+                        <Bar dataKey="revenue" fill="#82ca9d" />
+                    </BarChart>
                 </div>
             </div>
         </>
