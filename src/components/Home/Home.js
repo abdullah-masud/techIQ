@@ -10,11 +10,11 @@ const Home = () => {
     const [reviews, setReviews] = useReviews();
     return (
         <Container>
-            <div className='d-flex align-items-center justify-content-between my-5 hero-container'>
+            <div className='d-flex align-items-center justify-content-around my-5 hero-container'>
                 <div className=' text-start'>
                     <h1>MacBook Air</h1>
                     <h1>Power. It's in the Air</h1>
-                    <h6 className='mt-4 text-start mx-auto'>Our thinnest, lightest notebook, completely transformed by the Apple M1 chip
+                    <h6 className='mt-4 text-start mx-auto'>Our thinnest, lightest notebook, completely transformed by the <br />Apple M1 chip
                         The longest battery life ever in a MacBook Air.
                     </h6>
                 </div>
