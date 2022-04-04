@@ -1,6 +1,6 @@
-# Tech Analytics
+# TechIQ
 
-Website Link [Tech Analytics](https://github.com/facebook/create-react-app)
+Website Link [TechIQ](https://techiq.netlify.app/)
 
 ## Website Description
 
