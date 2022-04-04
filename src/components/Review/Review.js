@@ -11,7 +11,9 @@ const Review = (props) => {
                 <h2 style={{ color: "#0c5348" }}>{name}</h2>
                 <p className='m-0 my-3'>{review}</p>
                 <h6><small>Rating: {rating}</small></h6>
+
             </Card.Body>
+
         </Card>
 
 
